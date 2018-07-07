@@ -27,6 +27,9 @@ $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 # Dirac
 $(call inherit-product-if-exists, vendor/dirac/dirac.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -155,8 +158,7 @@ PRODUCT_BOOT_JARS += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libMiWatermark_shim \
-    Snap
+    libMiWatermark_shim
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
