@@ -63,6 +63,9 @@
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
 
 
+# Touchscreen
+/proc/tp_gesture             u:object_r:sysfs_tap_to_wake:s0
+
 # HW Info
 /sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
 /sys/devices/platform/HardwareInfo/gsensor  u:object_r:sysfs_info:s0
