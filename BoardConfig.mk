@@ -55,7 +55,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-11-01
+VENDOR_SECURITY_PATCH := 2020-01-05
 
 # Inherit the proprietary files
 -include vendor/xiaomi/whyred/BoardConfigVendor.mk
