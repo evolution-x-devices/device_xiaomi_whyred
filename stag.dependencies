@@ -35,4 +35,10 @@
     "target_path" : "vendor/dirac",
     "branch"      : "dirac"
   }
+  {
+    "remote"      : "github",
+    "repository"  : "LineageOS/android_hardware_qcom_fm",
+    "target_path" : "hardware/qcom/fm",
+    "branch"      : "lineage-17.0"
+  },
 ]
