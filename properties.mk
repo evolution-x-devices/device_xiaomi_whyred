@@ -167,7 +167,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_con_rprt=1 \
     persist.radio.calls.on.ims=1 \
     persist.vendor.ims.disableUserAgent=0 \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true  
+    persist.sys.fflag.override.settings_network_and_internet_v2=true  \
+    persist.rcs.supported=1 \
+    persist.radio.VT_ENABLE=1 \
+    persist.radio.volte.dan_support=true \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.sys.cust.lte_config=true
+
 
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
