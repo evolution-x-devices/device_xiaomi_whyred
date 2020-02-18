@@ -27,7 +27,7 @@
     "remote"      : "github",
     "repository"  : "StagOS-Devices/vendor_xiaomi_whyred",
     "target_path" : "vendor/MiuiCamera",
-    "branch"      : "MiuiCamera"
+    "branch"      : "camera"
   },
   {
     "remote"      : "github",
