@@ -45,7 +45,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.fluence.enable=true \
     vendor.audio.feature.custom_stereo.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
-    vendor.audio.feature.vbat.enabl=true
+    vendor.audio.feature.vbat.enabl=true \
+    vendor.audio.feature.multi_voice_session.enable=true 
+
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
