@@ -112,6 +112,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IBluetoothAudio</name>
             <instance>default</instance>
         </interface>
+ <fqname>@1.0::IBluetoothAudio/default</fqname>
    </hal>
    <hal format="hidl" optional="true">
        <name>com.qualcomm.qti.imscmservice</name>
@@ -142,6 +143,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IDSManager</name>
             <instance>wifidisplaydshal</instance>
         </interface>
+        <fqname>@1.0::IDSManager/wifidisplaydshal</fqname>
+        <fqname>@1.0::IHDCPSession/wifidisplayhdcphal</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>com.quicinc.cne.server</name>
@@ -191,6 +194,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IAlarm</name>
             <instance>default</instance>
         </interface>
+    </hal>
+<hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.cryptfshw</name>
@@ -246,6 +259,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                <instance>radioconfig0</instance>
                <instance>radioconfig1</instance>
            </interface>
+    </hal>
+<hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIWlan</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <fqname>@1.0::IIWlan/slot1</fqname>
+        <fqname>@1.0::IIWlan/slot2</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.lpa</name>
