@@ -99,7 +99,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.qti.telephony.vt_cam_interface=1 
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -158,7 +163,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     ril.subscription.types=NV,RUIM \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ro.telephony.default_network=22,20 \
+    ro.telephony.default_network=20,20 \
+    ro.com.android.dataroaming=false \
+    ro.telephony.iwlan_operation_mode=legacy \
     ro.vendor.use_data_netmgrd=true \
     telephony.lteOnCdmaDevice=1 \
     persist.radio.aosp_usr_pref_sel=true \
@@ -172,6 +179,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.VT_ENABLE=1 \
     persist.radio.volte.dan_support=true \
     persist.data.iwlan=1 \
+    persist.vendor.data.iwlan.enable=true \
     persist.data.iwlan.ipsec.ap=1 \
     persist.sys.cust.lte_config=true
 
