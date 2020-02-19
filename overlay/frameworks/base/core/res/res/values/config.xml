@@ -553,6 +553,13 @@
 <!-- If true, the camera will be used more often. -->
     <bool name="config_adaptive_sleep_available">true</bool>
 
+ <!-- Whether the always on display mode is available. -->
+   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+<!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
  <!-- Smart charge sysfs node and value for suspend/resume charging-->
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/battery_charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
